@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+        <title>Address Form</title>
+    </head>
+
+    <body class="antialiased h-dvh w-full">
+        <div class="grid place-content-center h-full gap-7">
+            <header>
+                <h1 class="font-bold text-2xl">Address Form</h1>
+            </header>
+
+            <form
+                action=""
+                class="grid gap-4"
+            >
+                <div class="flex flex-col gap-2">
+                    <label
+                        for=""
+                        class="uppercase text-gray-400 font-bold text-sm"
+                        >Region</label
+                    >
+                    <select
+                        name=""
+                        id="region"
+                        class="border border-gray-300 p-4 w-full"
+                    ></select>
+                </div>
+
+                <div
+                    class="province-select-container hidden flex flex-col gap-2"
+                >
+                    <label
+                        for=""
+                        class="uppercase text-gray-400 font-bold text-sm"
+                        >Province</label
+                    >
+                    <select
+                        name=""
+                        id="province"
+                        class="border border-gray-300 p-4 w-full"
+                    ></select>
+                </div>
+
+                <div
+                    class="city-municipality-select-container hidden flex flex-col gap-2"
+                >
+                    <label
+                        for=""
+                        class="uppercase text-gray-400 font-bold text-sm"
+                        >City/Municipality</label
+                    >
+                    <select
+                        name=""
+                        id="city_municipality"
+                        class="border border-gray-300 p-4 w-full"
+                    ></select>
+                </div>
+
+                <div
+                    class="barangay-select-container hidden flex flex-col gap-2"
+                >
+                    <label
+                        for=""
+                        class="uppercase text-gray-400 font-bold text-sm"
+                        >Barangay</label
+                    >
+                    <select
+                        name=""
+                        id="barangay"
+                        class="border border-gray-300 p-4 w-full"
+                    ></select>
+                </div>
+
+                <button
+                    type="button"
+                    id="reset"
+                    class="bg-blue-400 p-4 font-bold text-white cursor-pointer hover:bg-blue-300 transition duration-200 ease-in-out"
+                >
+                    Reset
+                </button>
+            </form>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
